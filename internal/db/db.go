@@ -5,6 +5,7 @@ import (
 	"fmt"
 
 	_ "github.com/lib/pq"
+	
 )
 
 var DB *sql.DB
@@ -27,6 +28,6 @@ func Init(connStr string)error{
 
 func Close(){
 	if DB!=nil{
-		db.Close()
+		DB.Close()
 	}
 }

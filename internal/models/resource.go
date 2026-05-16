@@ -10,6 +10,6 @@ type Resource struct{
 	Email string  `json:"email" db:"email"`
 	Status string	`json:"status" db:"status"`
 	CreatedAt time.Time `json:"created_at" db:"created_at"`
-	UpdateAt time.Time `json:"update_at" db:"updateAt"`
+	UpdatedAt time.Time `json:"update_at" db:"updateAt"`
 	
 }
